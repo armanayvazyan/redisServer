@@ -20,7 +20,7 @@ public class Client {
             dout.writeUTF(str);
             dout.flush();
             str2 = din.readUTF();
-            System.out.println("Server says: " + str2);
+            System.out.println("redis>: " + str2);
         }
 
         dout.close();
